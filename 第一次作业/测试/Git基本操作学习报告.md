@@ -1,7 +1,3 @@
----
-typora-copy-images-to: ./
----
-
 # Git基本操作学习报告
 
 创建git本地仓库：`git init`
@@ -12,7 +8,7 @@ git总共分为三个区域
 - 暂缓区（stage index）
 - 历史记录区（history）
 
-![image-20220904112850771](imgs\image-20220904112850771-16627270019882.png)
+![image-20220904112850771](../imgs/image-20220904112850771-16627270019882.png)
 
 working directory --> stage index
 
@@ -40,4 +36,4 @@ HEAD指针指向当前分支当前版本的游标
 
 - CTRL + 回车 commit
 
-  ![first commit_visual](imgs\first commit_visual-16627270078744.png)
+  ![first commit_visual](../imgs/first commit_visual-16627270078744.png)
