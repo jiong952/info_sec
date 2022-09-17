@@ -1,0 +1,7 @@
+# 测试.gitignore文件
+*.ipch
+*.db
+*.idb
+*.pdb
+*.log
+Debug/
