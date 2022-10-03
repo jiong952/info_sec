@@ -7,7 +7,6 @@ def encrypt(plaintext, key):
     ciphertext = ''
     for c in plaintext:
         ciphertext += str(ord(c) ^ random.randint(0, 255)) + ','
-    # 去除首尾逗号
     ciphertext = ciphertext.strip(',')
     return ciphertext
 
@@ -29,7 +28,6 @@ if __name__ == '__main__':
         K = int(input("请输入密钥："))
         print("密文为：", encrypt(M, K))
     elif input_str == '0':
-        print('您选择解密：')
         C = input("请输入密文：")
         K = int(input("请输入密钥："))
         print("明文为：", decrypt(C, K))
