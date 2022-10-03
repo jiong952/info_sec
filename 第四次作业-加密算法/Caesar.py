@@ -1,7 +1,7 @@
 # 加密
-def encrypt(Message, key):
+def encrypt(plaintext, key):
     ciphertext=""
-    for c in Message:
+    for c in plaintext:
         # 大写 65表示A
         if c.isupper():
             ciphertext += chr((ord(c) - 65 + key) % 26 + 65)
@@ -25,12 +25,14 @@ def decrypt(ciphtertext, key):
     return plaintext
 # 主函数
 if __name__ == '__main__':
-    option = int(input("请选择0（解密）或1（加密）: "))
-    if option == 1:
-        M=input("请输入明文：")
-        K=int(input("请输入密钥："))
+    option = input("请选择0（解密）或1（加密）: ")
+    if option == '1':
+        M = input("请输入明文：")
+        K = int(input("请输入密钥："))
         print("密文为：", encrypt(M, K))
-    else:
-        C=input("请输入密文：")
-        K=int(input("请输入密钥："))
+    elif option == '0':
+        C = input("请输入密文：")
+        K = int(input("请输入密钥："))
         print("明文为：", decrypt(C, K))
+    else:
+        print('请按照规则进行输入！')
