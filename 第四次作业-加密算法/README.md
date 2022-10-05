@@ -86,8 +86,9 @@ def encrypt(plaintext, key):
 
 加密
 
-![image-20221004211014841](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221004211014841.png)
+![image-20221005155820832](C:\Users\Mono\Desktop\虚拟人迁移优化\周报\img\image-20221005155820832.png)
 
 解密
 
-![image-20221004211245709](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221004211245709.png)
+![image-20221005155733931](C:\Users\Mono\Desktop\虚拟人迁移优化\周报\img\image-20221005155733931.png)
+

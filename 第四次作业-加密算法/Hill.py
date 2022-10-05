@@ -56,10 +56,15 @@ class Hill:
         """
         ans = np.array([])
         for i in range(text.shape[0] // self.m):
-            ans = np.mod(np.hstack((
+            a = text[i * self.m:i * self.m + self.m]
+            a = a.reshape(-1,1)
+            A =  np.mod(np.dot(K,a),26)
+            A = A.reshape(1,-1)
+            A = np.squeeze(A)
+            ans = np.hstack((
                 ans,
-                np.dot(text[i * self.m:i * self.m + self.m], K)
-            )), 26)
+                A
+            ))
         return ans.astype(np.int64)
 
     def encrypt(self, plaintext: np.ndarray):
@@ -107,12 +112,15 @@ if __name__ == '__main__':
         print("解密秘钥(供复制)：", *hill.pkey.flatten(), "\n")  # 打印解密秘钥
         nums = hill.translate(text, "num")
         result = hill.encrypt(nums)
-        print("密文为：", *result, "\n")
+        result = hill.translate(result, "text")
+        print("密文为：", result, "\n")
     elif option == '0':
         # 读入密文
         ciphertext = input("请输入密文（空格隔开）：")
-        ciphertext = [int(n) for n in ciphertext.split()]
-        ciphertext = np.array(ciphertext)
+        # 将密文转为数组数组
+        ciphertext = hill.translate(ciphertext, "num")
+        # ciphertext = [int(n) for n in ciphertext.split()]
+        # ciphertext = np.array(ciphertext)
         # 读入解密密钥
         pkey = input("请输入解密密钥（空格隔开）：")
         pkey = [int(n) for n in pkey.split()]
