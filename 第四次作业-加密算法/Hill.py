@@ -1,5 +1,8 @@
 import numpy as np
 
+import utils
+
+
 class Hill:
     def __init__(self, m: int, fillchar: str = "K", key: np.ndarray = None):
         self.m = m  # 秘钥的维度
@@ -93,7 +96,7 @@ class Hill:
 
 # 主函数
 if __name__ == '__main__':
-    option = input("请选择0（解密）或1（加密）: ")
+    option = input("请选择0（解密）或1（加密）或2(字符统计): ")
     dim = int(input("请输入密钥的维度："))
     hill = Hill(m=dim)
     if option == '1':
@@ -130,5 +133,9 @@ if __name__ == '__main__':
         nums = hill.decrypt(ciphertext)
         res = hill.translate(nums, "text")
         print("解密后的明文是：\n", res, "\n")
+    elif option == '2':
+        M = input("请输入明文：")
+        C = input("请输入密文：")
+        utils.paint(utils.countchar(M),utils.countchar(C))
     else:
         print('请按照规则进行输入！')
