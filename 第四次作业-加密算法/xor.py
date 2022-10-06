@@ -5,10 +5,12 @@ import random
 def encrypt(plaintext, key):
     random.seed(key)
     ciphertext = ''
+    # 文本
     for c in plaintext:
         ciphertext += str(ord(c) ^ random.randint(0, 255)) + ','
     ciphertext = ciphertext.strip(',')
     return ciphertext
+
 
 # 解密
 def decrypt(ciphtertext, key):
