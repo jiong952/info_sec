@@ -1,4 +1,6 @@
-import utils
+from util import utils
+
+
 # 加密
 def encrypt(plaintext, key):
     ciphertext=""
@@ -38,6 +40,6 @@ if __name__ == '__main__':
     elif option == '2':
         M = input("请输入明文：")
         C = input("请输入密文：")
-        utils.paint(utils.countchar(M),utils.countchar(C))
+        utils.paint(utils.countchar(M), utils.countchar(C))
     else:
         print('请按照规则进行输入！')

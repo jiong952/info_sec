@@ -1,9 +1,3 @@
-## 加密算法
-
-## 版本说明
-
-新增Caesar加密算法
-
 ## 凯撒加密算法
 
 **原理**
@@ -17,9 +11,17 @@
 
 **测试实例：**
 
+命令行：
+
 ![image-20221003233839320](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221003233839320.png)
 
 ![image-20221003233902436](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221003233902436.png)
+
+GUI：
+
+![image-20221007224930794](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221007224930794.png)
+
+![image-20221007224950246](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221007224950246.png)
 
 **加密前后字符统计对比：**
 
@@ -52,9 +54,17 @@ def encrypt(plaintext, key):
 
 **测试实例：**
 
+命令行：
+
 ![image-20221003234338192](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221003234338192.png)
 
 ![image-20221003234419946](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221003234419946.png)
+
+GUI：
+
+![image-20221007225026401](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221007225026401.png)
+
+![image-20221007225033709](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221007225033709.png)
 
 ## Playfair加密算法
 
@@ -67,6 +77,8 @@ def encrypt(plaintext, key):
 
 **测试实例：**
 
+命令行
+
 加密：
 
 ![image-20221004132923556](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221004132923556.png)
@@ -76,6 +88,12 @@ def encrypt(plaintext, key):
 注意：解密过程存在缺陷，最后一个字母无法判断是加密填充还是手动输入
 
 ![image-20221004133014667](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221004133014667.png)
+
+GUI
+
+![image-20221007225147807](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221007225147807.png)
+
+![image-20221007225158426](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221007225158426.png)
 
 **加密前后字符统计对比：**
 
@@ -106,6 +124,8 @@ def encrypt(plaintext, key):
 
 **测试实例：**
 
+命令行：
+
 加密
 
 ![image-20221005155820832](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221005155820832.png)
@@ -114,7 +134,11 @@ def encrypt(plaintext, key):
 
 ![image-20221005155733931](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221005155733931.png)
 
+GUI：
 
+![image-20221007225251883](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221007225251883.png)
+
+![image-20221007225302722](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221007225302722.png)
 
 ![image-20221005164931760](C:\Users\Mono\Desktop\大三作业\信息安全概论\第四次作业-加密算法\img\image-20221005164931760-16649597722841.png)
 

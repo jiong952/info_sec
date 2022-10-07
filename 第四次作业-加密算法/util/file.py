@@ -1,6 +1,5 @@
-import os
 # 读取文本文件
-import Caesar
+from algorithm import Caesar
 
 
 def read_file(file_path):
@@ -13,7 +12,7 @@ def write_file(file_path,content):
         f.write(content)
 
 if __name__ == '__main__':
-    content = read_file('data.txt')
-    A = Caesar.decrypt(content,3)
+    content = read_file('../data.txt')
+    A = Caesar.decrypt(content, 3)
     print(A)
-    write_file('data.txt',A)
+    write_file('../data.txt', A)

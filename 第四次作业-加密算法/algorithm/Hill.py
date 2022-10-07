@@ -1,10 +1,10 @@
 import numpy as np
 
-import utils
+from util import utils
 
 
 class Hill:
-    def __init__(self, m: int, fillchar: str = "K", key: np.ndarray = None):
+    def __init__(self, m: int = 3, fillchar: str = "K", key: np.ndarray = None):
         self.m = m  # 秘钥的维度
         self.ckey = key  # 加密秘钥
         self.pkey = None  # 解密秘钥
@@ -19,7 +19,8 @@ class Hill:
         assert m > 0, "请输入一个大于0的数"
         self.m = m
 
-    def setKey(self, key: np.ndarray = None) -> None:
+    # 返回加密密钥和解密密钥
+    def setKey(self, key: np.ndarray = None) :
         if key is None:  # 生成直到行列式有逆元为止
             while key is None or Hill.modInv(np.linalg.det(key)) == -1:
                 key = np.random.randint(0, 27, size=(self.m, self.m))
@@ -33,6 +34,7 @@ class Hill:
         K_star = np.around(K_inv * K_det % 26).astype(np.int64) # K的伴随矩阵
         self.pkey = y * K_star % 26 # 解密矩阵
         self.ckey = key
+        return key,self.pkey
 
     def setPkey(self, key: np.ndarray = None) -> None:
         self.pkey = key
@@ -136,6 +138,6 @@ if __name__ == '__main__':
     elif option == '2':
         M = input("请输入明文：")
         C = input("请输入密文：")
-        utils.paint(utils.countchar(M),utils.countchar(C))
+        utils.paint(utils.countchar(M), utils.countchar(C))
     else:
         print('请按照规则进行输入！')

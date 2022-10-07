@@ -1,6 +1,6 @@
 # 字母矩阵J统一用I
 # 字母表 26个大写字母
-import utils
+from util import utils
 
 alphabet = 'ABCDEFGHIKLMNOPQRSTUVWXYZ'
 # 密钥去出重复字母
@@ -58,7 +58,7 @@ def get_ctext(ch1, ch2, matrix):
     return text
 
 # 加密
-def encrypt(plaintext, key):
+def encrypt(plaintext, key,fill = 'K'):
     # 大写 去除空白字符 替换J为I
     plaintext = plaintext.replace(" ", "")
     plaintext = plaintext.upper()
@@ -74,10 +74,10 @@ def encrypt(plaintext, key):
     while plaintext[i] != '#':
         # 相同插入K
         if plaintext[i] == plaintext[i + 1]:
-            plaintext.insert(i + 1, 'K')
+            plaintext.insert(i + 1, fill)
         # 最后多出一个
         if plaintext[i + 1] == '#':
-            plaintext[i + 1] = 'K'
+            plaintext[i + 1] = fill
         ciphertext += get_ctext(plaintext[i], plaintext[i + 1], matrix)
         i += 2
     return ciphertext
@@ -105,7 +105,7 @@ def get_ptext(ch1, ch2, matrix):
     return text
 
 # 解密 注意 由于加密如果末尾不足两字母会加一个K 因此解密过程无法判断是否加了K，因此保留所有K
-def decrypt(ciphertext, key):
+def decrypt(ciphertext, key,fill = 'K'):
     matrix = get_matrix(key)
     i = 0
     plaintext = ''
@@ -115,9 +115,9 @@ def decrypt(ciphertext, key):
     _plaintext = ''
     _plaintext += plaintext[0]
     for i in range(1, len(plaintext)-1):
-        if plaintext[i] != 'K':
+        if plaintext[i] != fill:
             _plaintext += plaintext[i]
-        elif plaintext[i] == 'K':
+        elif plaintext[i] == fill:
             if plaintext[i-1] != plaintext[i+1]:
                 _plaintext += plaintext[i]
     _plaintext += plaintext[-1]
@@ -138,6 +138,6 @@ if __name__ == '__main__':
     elif option == '2':
         M = input("请输入明文：")
         C = input("请输入密文：")
-        utils.paint(utils.countchar(M),utils.countchar(C))
+        utils.paint(utils.countchar(M), utils.countchar(C))
     else:
         print('请按照规则进行输入！')
