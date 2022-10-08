@@ -185,6 +185,8 @@ class Ui_MainWindow(object):
         self.pushButton_2.clicked.connect(MainWindow.decrypt)
         self.pushButton_3.clicked.connect(MainWindow.generateKey)
         self.pushButton_4.clicked.connect(MainWindow.uploadFile)
+        self.pushButton_5.clicked.connect(MainWindow.encrypt_file)
+        self.pushButton_6.clicked.connect(MainWindow.decrypt_file)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):

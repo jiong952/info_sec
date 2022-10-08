@@ -344,8 +344,8 @@
    <slot>encrypt()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>78</x>
-     <y>415</y>
+     <x>79</x>
+     <y>378</y>
     </hint>
     <hint type="destinationlabel">
      <x>77</x>
@@ -360,8 +360,8 @@
    <slot>decrypt()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>153</x>
-     <y>414</y>
+     <x>204</x>
+     <y>378</y>
     </hint>
     <hint type="destinationlabel">
      <x>152</x>
@@ -376,8 +376,8 @@
    <slot>generateKey()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>236</x>
-     <y>417</y>
+     <x>299</x>
+     <y>378</y>
     </hint>
     <hint type="destinationlabel">
      <x>236</x>
@@ -392,12 +392,44 @@
    <slot>uploadFile()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>209</x>
-     <y>235</y>
+     <x>299</x>
+     <y>265</y>
     </hint>
     <hint type="destinationlabel">
      <x>207</x>
      <y>296</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>encrypt_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>419</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>115</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>decrypt_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>415</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>253</x>
+     <y>449</y>
     </hint>
    </hints>
   </connection>
@@ -407,5 +439,7 @@
   <slot>decrypt()</slot>
   <slot>generateKey()</slot>
   <slot>uploadFile()</slot>
+  <slot>encrypt_file()</slot>
+  <slot>decrypt_file()</slot>
  </slots>
 </ui>
