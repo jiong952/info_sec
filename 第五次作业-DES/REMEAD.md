@@ -100,6 +100,44 @@ S1 = [[14, 4, 13, 1, 2, 15, 11, 8, 3, 10, 6, 12, 5, 9, 0, 7],
 #### 代码如下：
 
 ```python
+def from_codetocode(key, code, time):
+    des = DES()
+    allavg = 0
+    for alltime in range(time):
+        avg = 0
+        print("\n--------------------------------------------第" + str(
+            alltime + 1) + "次统计---------------------------------------------\n")
+        for i in range(64):
+            change = 0
+            changecode = encrypt(des.changekey(key, i), code)
+            print("明文改变" + str(i + 1) + '位:' + str(changecode))
+            for a in range(64):
+                if changecode[a] != code[a]:
+                    change += 1
+                    print('密文改变了' + str(change) + '位\n')
+                    avg += change
+                    avg = avg / 64
+                    print('第' + str(alltime + 1) + '次统计：' + str(avg) + '\n')
+                    allavg += avg
+                    alla = allavg / time
+                    print('统计次数：100次  总计平均改变次数：' + str(alla) + '\n')
+```
+
+#### 测试过程：
+
+经过100次统计得到输入明文改变1位、2位。。。64位。输出密文位数平均改变32.0次
+
+![image-20221019120054276](img/image-20221019120054276.png)
+
+![image-20221019120103839](img/image-20221019120103839.png)
+
+## 功能三
+
+实现的功能：统计DES算法在明文固定情况，输入密钥改变1位、2位。。。64位。输出密文位数改变情况
+
+#### 代码如下：
+
+```python
 def keytocode(key, code, time):
     des = DES()
     allavg = 0
@@ -127,11 +165,8 @@ def keytocode(key, code, time):
 
 #### 测试过程：
 
-经过100次统计得到输入输入明文改变1位、2位。。。64位。输出密文位数平均改变31.9次
+经过100次统计得到输入密钥改变1位、2位。。。64位。输出密文位数平均改变31.9次
 
 ![image-20221019115442265](img/image-20221019115442265.png)
 
 ![image-20221019115451924](img/image-20221019115451924.png)
-
-
-

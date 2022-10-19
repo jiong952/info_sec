@@ -298,28 +298,6 @@ def gbgui():
             text2.insert(END, '总计改变次数：' + str(alla) + '\n\n')
             print('总计改变次数：' + str(alla) + '\n')
 
-            def keytocode(key, code, time):
-                des = DES()
-                allavg = 0
-                for alltime in range(time):
-                    avg = 0
-                    print("\n--------------------------------------------第" + str(
-                        alltime + 1) + "次统计---------------------------------------------\n")
-                    for i in range(64):
-                        change = 0
-                        changecode = encrypt(code, des.changekey(key, i))
-                        print("密钥改变" + str(i + 1) + '位:' + str(changecode))
-                        for a in range(64):
-                            if changecode[a] != code[a]:
-                                change += 1
-                        print('密文改变了' + str(change) + '位\n')
-                        avg += change
-                    avg = avg / 64
-                    print('第' + str(alltime + 1) + '次统计：' + str(avg) + '\n')
-                    allavg += avg
-                alla = allavg / time
-                print('总计改变次数：' + str(alla) + '\n')
-
         def from_codetocode(key, code, time):
             des = DES()
             allavg = 0
@@ -347,6 +325,7 @@ def gbgui():
             alla = allavg / time
             text2.insert(END, '总计改变次数：' + str(alla) + '\n\n')
             print('统计次数：100次  总计平均改变次数：' + str(alla) + '\n')
+
 
         getfunction = cmb.get()
         getzhi = int(mentry.get())
