@@ -1,6 +1,5 @@
 import tkinter
 import tkinter.messagebox
-from tkinter.messagebox import *
 from tkinter import *
 
 from tkinter import ttk
