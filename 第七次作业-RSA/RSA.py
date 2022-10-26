@@ -61,7 +61,7 @@ def probin(w):
     res = int(''.join(list), 2)
     return res
 
-
+# miller_rabin法验证素数
 def prime_miller_rabin(a, n):  # 检测n是否为素数
     '''
     第一步，模100以内的素数，初步排除很显然的合数
@@ -92,7 +92,7 @@ def prime_miller_rabin(a, n):  # 检测n是否为素数
     else:
         return False
 
-
+# 检测素数
 def prime_test(n, k):
     while k > 0:
         a = random.randint(2, n - 1)
@@ -117,6 +117,36 @@ def get_prime(bit):
         else:
             continue
 
+# 判断n是素数
+def isPrime(p):
+    # 素数的判断
+    if p <= 1:
+        return False
+    i = 2
+    while i * i <= p:
+        if p % i == 0:
+            return False
+        i += 1
+    return True
+# 获得n的两个因子
+def factor(n):
+    if n==1: return []
+    if isPrime(n):return [n]
+    fact=1
+    cycle_size=2
+    x = x_fixed = 2
+    c = random.randint(1, n)
+    while fact==1:
+        for i in range(cycle_size):
+            if fact>1:break
+            x=(x*x+c)%n
+            if x==x_fixed:
+                c = random.randint(1, n)
+                continue
+            fact = gcd(x-x_fixed,n)
+        cycle_size *=2
+        x_fixed = x
+    return factor(fact)+factor(n//fact)
 
 if __name__ == '__main__':
     p = get_prime(512)  # 密钥p
