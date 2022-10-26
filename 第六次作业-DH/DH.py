@@ -47,7 +47,7 @@ if __name__ == "__main__":
     p = int(input('请输入一个素数：'))
     while isPrime(p) == False:
         print('不是素数，请请重新输入！！')
-        p = int(input(print('请输入一个素数')))
+        p = int(input('请输入一个素数'))
     print(str(p) + '是素数')
 
     # 得到素数的一个生成元
