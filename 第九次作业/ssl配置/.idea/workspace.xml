@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4adb9803-4b87-47d1-843a-7024a855221a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../第八次作业-数字签名 Hash查找重复文件 口令生成器 记忆测试器/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../第八次作业-数字签名 Hash查找重复文件 口令生成器 记忆测试器/find_duplicate_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../第八次作业-数字签名 Hash查找重复文件 口令生成器 记忆测试器/作业文档.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../第八次作业-数字签名 Hash查找重复文件 口令生成器 记忆测试器/作业文档.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2JMAf13V1R4dOdYi5tT9hGB6lDa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4adb9803-4b87-47d1-843a-7024a855221a" name="Default Changelist" comment="" />
+      <created>1671877678406</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671877678406</updated>
+      <workItem from="1671877679762" duration="301000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
