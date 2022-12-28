@@ -55,4 +55,4 @@
 
 作业内容：实现SSL、IPSEC抓包分析、PKI中证书申请、创建、分发
 
-[点击跳转第九次作业-数字签名 Hash查找重复文件 口令生成器 记忆测试器/作业文档.md · master · 俊鸿 张 / infosec · GitLab](./第九次作业/SSL+ipsec+PKI.md)
+[点击跳转第九次作业-SSL、IPSEC、PKI](./第九次作业/SSL+ipsec+PKI.md)
