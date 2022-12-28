@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02ce4c3e-0c35-4e9e-b288-3163f14d148e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../第八次作业-数字签名 Hash查找重复文件 口令生成器 记忆测试器/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../第八次作业-数字签名 Hash查找重复文件 口令生成器 记忆测试器/find_duplicate_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../第八次作业-数字签名 Hash查找重复文件 口令生成器 记忆测试器/作业文档.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../第八次作业-数字签名 Hash查找重复文件 口令生成器 记忆测试器/作业文档.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +25,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../前端/智能移动平台实验/实验四(大作业)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -43,6 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671878473697</updated>
       <workItem from="1671878475942" duration="159000" />
+      <workItem from="1671890204441" duration="8000" />
     </task>
     <servers />
   </component>
