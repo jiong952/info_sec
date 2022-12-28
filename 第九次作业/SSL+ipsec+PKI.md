@@ -210,7 +210,7 @@
 
 ![image-20221224174933252](img/image-20221224174933252.png)
 
-我使用prime239v3生成ECC秘钥对，使用ECC key生成CA证书
+我使用prime256v1生成ECC秘钥对，使用ECC key生成CA证书
 
 首先生成CA ECC密钥 
 
